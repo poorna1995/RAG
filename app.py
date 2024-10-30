@@ -16,6 +16,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from pinecone import Pinecone, ServerlessSpec
 from langchain_pinecone import PineconeVectorStore
 from langchain_pinecone.embeddings import PineconeEmbeddings
+from langchain.schema import Document  # Import the Document class
+# from langchain_community.vectorstores import Pinecone
 
 
 
@@ -40,32 +42,15 @@ if index_name not in existing_indexes:
 
 index = pc.Index(index_name)
 
-from langchain.schema import Document  # Import the Document class
-
-
-
-
-
-
 # Load and preprocess the PDF documents
 def load_pdf(file_path):
     loader = PyPDFLoader(file_path)
     return [Document(page_content=page.page_content) for page in loader.load()]  # Convert to Document objects
 
-
-
-
 # process the data - splitting into chunks
 def process_text(pages):
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=100)
     return text_splitter.split_documents(pages)  # Pass Document objects
-
-
-
-
-
-
-
 
 # created a vector database using pineonce vector
 def create_pinecone_vector_store(processed_texts):
@@ -76,9 +61,6 @@ def create_pinecone_vector_store(processed_texts):
     
     # Add documents with embeddings to Pinecone
     vector_store.add_documents(processed_texts, ids=ids)
-
-
-
 
 # create the chat prompt for the response
 def chat(query,processed_texts):
@@ -111,24 +93,16 @@ def chat(query,processed_texts):
     response = rag_chain.invoke(inputs)
     return response
 
-
-
-
-
-
-
-
-
-
 # Async function to process the PDF in the background
 async def process_pdf_background(file_path):
     with ThreadPoolExecutor() as pool:
         pages = await asyncio.get_event_loop().run_in_executor(pool, load_pdf, file_path)
         return await asyncio.get_event_loop().run_in_executor(pool, process_text, pages)
 
+
 # Main Streamlit app
 def main():
-    st.title("RAG System for NCERT Text")
+    st.title("RAG System")
     
     uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
     
