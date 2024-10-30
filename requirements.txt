@@ -1,6 +1,10 @@
 streamlit
-langchain
+python-dotenv
 langchain-community
 langchain-huggingface
+langchain
 langchain-groq
-chromadb
+langchain-core
+langchain-text-splitter
+pinecone-client
+langchain-pinecone
