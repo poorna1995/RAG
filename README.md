@@ -43,51 +43,38 @@ To simplify the engineering tasks required for building and scaling the project,
 
 ![Rag](https://github.com/user-attachments/assets/482dd56e-c1c6-4609-aebe-b2331eacda5b)
 
-<br><br>
+<br><be>
 
-### 1. Clone the Repository
+
+
+ ### 1. Clone the Repository
 
 To get started, clone the repository to your local machine using the following command:
+    
+    ```bash
+    git clone <repository-url>
+    cd <repository-folder>
+    
+ ### 2. Create a virtual environment:
+ it is a good practice to use a virtual environment to manage your project dependencies.
+    
+     ```bash
+     python -m venv venv
+     venv\Scripts\activate
 
-```bash
-git clone <repository-url>
-cd <repository-folder>
-
-### Create a virtual environment:
-it is a good practice to use a virtual environment to manage your project dependencies.
-
- ```bash
- python -m venv venv
- venv\Scripts\activate
-
-
-### Install Packages: Make sure you have pip installed.
-
- ```bash
- pip install -r requirements.txt
-
-
-### Set Up Environment Variables
+ ### 3. Install Packages: Make sure you have pip installed.
+      ```bash
+     pip install -r requirements.txt
+ ### 4. Set Up Environment Variables
 Create a .env file in the root of your project directory and add the necessary environment variables.
-
- ```bash
- PINECONE_API_KEY=your_pinecone_api_key
- GROQ_API_KEY=your_groq_api_key
-
-
+    
+     ```bash
+     PINECONE_API_KEY=your_pinecone_api_key
+     GROQ_API_KEY=your_groq_api_key
+     
 Replace your_pinecone_api_key and your_groq_api_key with your actual API keys.
 
-
-### Run the Streamlit Application:
-
- ```bash
+ ### 5. Run the Streamlit Application:
+     ```bash
  streamlit run app.py
-
-
-
-
-
-
-
-
-
+ 
