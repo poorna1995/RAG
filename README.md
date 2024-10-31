@@ -30,8 +30,7 @@ Now, we understand what RAG is and the simple workflow of its. let's start under
 
 To make this whole process easier and more seamless, we utilize the Langchain framework, which simplifies the engineering tasks required for building and scaling the project.
 
-![langchain](https://github.com/user-attachments/assets/5cf0a4e6-8dab-42d7-874c-600830de77b7)
-
+![langchain](https://github.com/user-attachments/assets/8a387d90-a203-4ac5-9ff6-d9a21104576c)
 
 
 
