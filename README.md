@@ -76,5 +76,5 @@ Replace your_pinecone_api_key and your_groq_api_key with your actual API keys.
 
  ### 5. Run the Streamlit Application:
      ```bash
- streamlit run app.py
+     streamlit run app.py
  
