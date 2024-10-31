@@ -12,8 +12,15 @@ RAG combines information retrieval and generation, enhancing response quality by
 
 1. **Retriever**: Finds relevant text (documents or passages) based on a user query.
 2. **Generator**: Uses the retrieved information to create accurate, context-aware responses.
+ <br><br>
+
 
 ![Rag_general](https://github.com/user-attachments/assets/d549a555-af8f-4371-a62f-6ac7733452f9)
+
+<div style="text-align: center;">
+RAG System Flow
+</div>
+
 
 ### Rag flow
 
@@ -30,8 +37,10 @@ Now, we understand what RAG is and the simple workflow of its. let's start under
 
 To make this whole process easier and more seamless, we utilize the Langchain framework, which simplifies the engineering tasks required for building and scaling the project.
 
-![langchain](https://github.com/user-attachments/assets/8a387d90-a203-4ac5-9ff6-d9a21104576c)
-
+![langchain](https://github.com/user-attachments/assets/32f3bf35-7134-4d42-844c-c49de701c6f7)
+<div style="text-align: center;">
+Langchain Frameword
+</div>
 
 
 ![image](https://github.com/user-attachments/assets/77f7190c-c9b6-4417-b87c-6aff3d54b3b3)
