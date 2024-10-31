@@ -17,6 +17,8 @@ RAG combines information retrieval and generation, enhancing response quality by
 
 ![Rag_general](https://github.com/user-attachments/assets/d549a555-af8f-4371-a62f-6ac7733452f9)
 
+
+```html
 <div style="text-align: center;">
 RAG System Flow
 </div>
