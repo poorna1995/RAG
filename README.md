@@ -1,23 +1,24 @@
 
 
-# Chat Application using Retrieval-Augmented Generation (RAG)
+### Chat Application using Retrieval-Augmented Generation (RAG)
 
 This project explores a **Retrieval-Augmented Generation (RAG)** approach for answering questions based on information extracted from a set of PDF documents. The primary goal is to create an intelligent Question-Answering (QA) tool that provides accurate, contextually relevant responses derived directly from the uploaded documents.
 
-## What is Retrieval-Augmented Generation (RAG)?
+### What is Retrieval-Augmented Generation (RAG)?
 
 RAG combines information retrieval and generation, enhancing response quality by adding relevant external context. It consists of two key components:
 
 1. **Retriever**: Finds relevant text (documents or passages) based on a user query.
 2. **Generator**: Uses the retrieved information to create accurate, context-aware responses.
 
+
+### RAG Workflow
 ![RAG System Flow](https://github.com/user-attachments/assets/d549a555-af8f-4371-a62f-6ac7733452f9)
 
 <div style="text-align: center;">
     RAG System Flow
 </div>
 
-## RAG Workflow
 
 ### Why Use RAG in This Project?
 
@@ -40,6 +41,10 @@ To simplify the engineering tasks required for building and scaling the project,
 
 ## Implementation Steps
 
+![Rag](https://github.com/user-attachments/assets/482dd56e-c1c6-4609-aebe-b2331eacda5b)
+
+<br><br>
+
 ### 1. Clone the Repository
 
 To get started, clone the repository to your local machine using the following command:
@@ -47,27 +52,6 @@ To get started, clone the repository to your local machine using the following c
 ```bash
 git clone <repository-url>
 cd <repository-folder>
-
-### Let's Implement:
-
-
-
-
-
-![Rag](https://github.com/user-attachments/assets/482dd56e-c1c6-4609-aebe-b2331eacda5b)
-
-<br><br>
-
-
-#### 1: Clone the Repository
-
-To get started, clone the repository to your local machine using the following command:
-
- ```bash
- git clone <repository-url>
- cd <repository-folder>
-
-
 
 ### Create a virtual environment:
 it is a good practice to use a virtual environment to manage your project dependencies.
