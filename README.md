@@ -6,6 +6,9 @@
 This project explores a **Retrieval-Augmented Generation (RAG)** to answer questions by retrieving and generating responses based on document content. 
 
 ![Rag_general](https://github.com/user-attachments/assets/83315303-c176-4f27-9f52-c9b3bf36c356)
+
+![Rag_general](https://github.com/user-attachments/assets/d549a555-af8f-4371-a62f-6ac7733452f9)
+
 ### Rag flow
 
 
